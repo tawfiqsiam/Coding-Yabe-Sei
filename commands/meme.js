@@ -20,5 +20,5 @@ exports.run = (client, message, args) => {
 exports.help = {
     name: "meme",
     description: "The `meme` command displays a random meme from the interwebs.",
-    usage: "`yabe meme`",
+    usage: "`!meme`",
 }
