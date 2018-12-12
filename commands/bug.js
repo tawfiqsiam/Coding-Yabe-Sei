@@ -16,5 +16,5 @@ exports.run = (client, message, args) => {
 exports.help = {
     name: "bug",
     description: "The `bug` command allows the user to send a bug receipt to the developers of the bot.",
-    usage: "`yabe bug <bug message>`",
+    usage: "`ya.e bug <bug message>`",
 }
