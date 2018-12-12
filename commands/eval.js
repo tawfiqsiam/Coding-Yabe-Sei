@@ -41,5 +41,5 @@ exports.run = (client, message, args) => {
 exports.help = {
 	name: "eval",
 	description: "Evaluates javascript code",
-	usage: "`yabe eval <code to be evaled>`",
+	usage: "`eval <code to be evaled>`",
 }
