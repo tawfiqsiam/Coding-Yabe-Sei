@@ -5,7 +5,7 @@ exports.run = (client, message, args) => {
     let embed = new Discord.RichEmbed()
     .setTitle("**Who is Coding Yabe Sei?**")
     .setDescription("Codied as a gift to my Friend Jala Owner of Skrrt Server ")
-    .addField("Created by:", "- ,`Jacob | ♂ , ♡#9900\n\nJoin our [Discord](https://discord.gg/bhZGHCm) To ask if you can get your own botn\n")
+    .addField("Created by:", "- ,`Jacob | ♂ , ♡#9900\n\nJoin our [Discord](https://discord.gg/62EbKEV) To ask if you can get your own botn\n")
     .setTimestamp()
     .setFooter(`Version:  ${version} | Currently on ${client.guilds.size} servers with ${client.users.size} users.`)
     .setColor(client.config.embedColor)
