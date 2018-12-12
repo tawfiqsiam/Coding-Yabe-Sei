@@ -15,5 +15,5 @@ var milliseconds = parseInt((client.uptime % 1000) / 100),
 exports.help = {
     name: "uptime",
     description: "Allows you to view how long Yabe has been running.",
-    usage: "`yabe uptime`",
+    usage: "`!uptime`",
 }
