@@ -1,45 +1,30 @@
-const Discord = require('discord.js');
+const Discord = require("discord.js");
+var ClientMod = new Discord.Client({
+    "autoreconnect": true
+});
 
 exports.run = (client, message, args) => {
-	if ((message.author.id == client.config.devs.canarado) || (message.author.id == client.config.devs.senpai) || (message.author.id == client.config.devs.illusion)) { //return message.channel.send('Nope.');
+    const no = client.emojis.get("385486628610899968");
 
-		const clean = text => {
-			if (typeof (text) === "string")
-				return text.replace(/`/g, "`" + String.fromCharCode(8203)).replace(/@/g, "@" + String.fromCharCode(8203));
-			else
-				return text;
-		}
+    function clean(text) {
+        if (typeof(text) === "string")
+            return text.replace(/`/g, "`" + String.fromCharCode(8203)).replace(/@/g, "@" + String.fromCharCode(8203));
+        else
+            return text;
+    }
 
-		let devText = args.join(" ");
+    if (message.author.id !== "285399206708117504") return message.channel.send(`${no} Oops! Seems like you tried to run owner only command!`);
+    message.delete();
+    try {
+        const code = args.join(" ");
+        let evaled = eval(code);
 
-		try {
-			const code = args.join(" ");
-			let evaled = eval(code);
-
-			if (typeof evaled !== "string")
-				evaled = require("util").inspect(evaled);
-
-			//let outputText = `clean(evaled), {code:"xl"}`;
-
-			let embed = new Discord.RichEmbed()
-				.addField("Input :inbox_tray:", `\`\`\`${devText}\`\`\``)
-				.addBlankField()
-				.addField("Output :outbox_tray:", `\`\`\`${clean(evaled)}\`\`\``)
-				.setColor(client.config.embedColor)
-
-			message.channel.send(embed)
-
-			//message.channel.send(clean(evaled), {code:"xl"});
-		} catch (err) {
-			message.channel.send(`\`ERROR\` \`\`\`xl\n${clean(err)}\n\`\`\``);
-		}
-	} else {
-		return message.channel.send('```js\nNo Eval 4 U\n```');
-	}
-}
-
-exports.help = {
-	name: "eval",
-	description: "Evaluates javascript code",
-	usage: "`eval <code to be evaled>`",
-}
+        if (typeof evaled !== "string")
+            evaled = require("util").inspect(evaled);
+        message.channel.send(`Input\n` + `${code}\n` + `\nOutput\n` + clean(evaled), {
+            code: "xl"
+        });
+    } catch (err) {
+        message.channel.send(`\`ERROR\` \`\`\`xl\n${clean(err)}\n\`\`\``);
+    }
+};

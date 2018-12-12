@@ -1,16 +1,3 @@
-const Discord = require('discord.js');
-
 exports.run = (client, message, args) => {
-    let embed = new Discord.RichEmbed()
-
-    .setColor(client.config.embedColor)
-    .setDescription(`[Click here to invite me to your server :3](https://discord.gg/62EbKEV)`)
-
-    message.channel.send(embed)
-}
-
-exports.help = {
-    name: "invite",
-    description: "The `invite` command sends an instant invite for Yabe straight to your own server(s).",
-    usage: "`!invite`",
+    message.channel.send(`You can invite me with this link:\nhttps://discordapp.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=51200&scope=bot`)
 }
