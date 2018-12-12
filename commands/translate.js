@@ -152,9 +152,9 @@ exports.run = (client, message, [args, ...words]) => {
     let targetLang = args[3] + args[4];
 
     if (!langs.hasOwnProperty(sourceLang))
-        return message.channel.send(`Source language \`${sourceLang}\` doesn't exist.\n(if you believe this is wrong make a bug report using \`yabe bug\`)`);
+        return message.channel.send(`Source language \`${sourceLang}\` doesn't exist.\n(if you believe this is wrong  report it \`hope\`)`);
     if (args[2] !== "-")
-        return message.channel.send('Please correctly format the command, like so\n\n`yabe translate en-es "word or sentence to translate"`');
+        return message.channel.send('Please correctly format the command, like so\n\n`!translate en-es "word or sentence to translate"`');
     if (!langs.hasOwnProperty(targetLang))
         return message.channel.send(`Target Language \`${targetLang}\` doesn't exist.\n(if you believe this is wrong make a bug report using \`yabe bug\`)`);
     if (words == "")
@@ -177,7 +177,7 @@ exports.run = (client, message, [args, ...words]) => {
         }
         catch(err) {
             console.log(err);
-            message.channel.send("Something went wrong while translating, please check you formatted it correctly and try again.\nor if you believe this is a bug please report it with `yabe bug`");
+            message.channel.send("Something went wrong while translating, please check you formatted it correctly and try again.\nor if you believe this is a bug please report it ");
         }
     })
 }
@@ -185,5 +185,5 @@ exports.run = (client, message, [args, ...words]) => {
 exports.help = {
     name: "translate",
     description: "The `translate` command translates any text from any given language to another",
-    usage: "`yabe translate <source language>-<target language> <word or sentence to translate>`\nNote: the languages need to be in ISO 639-1 code format.",
+    usage: "`!translate <source language>-<target language> <word or sentence to translate>`\nNote: the languages need to be in ISO 639-1 code format.",
 }
