@@ -33,7 +33,7 @@ exports.run = (client, message, args) => {
     } else {
         const embed = new Discord.RichEmbed()
             .setColor(client.config.embedColor)
-            .addField("**Changelog**", "You can check the latest changes with `Star changelog`")
+            .addField("**Changelog**", "You can check the latest changes with `changelog`")
             .addField("**Commands**", "List of all available commands\nFor additional help with a command, type `!help <command name>`\nThank you for using the bot! We hope you will stick with us!")
             .addField("**Moderation** *`each require certain perms`*", "`say` `kick` `ban` `rem`")
             .addField("**Fun**", "`meme` `poke` `slap`")
