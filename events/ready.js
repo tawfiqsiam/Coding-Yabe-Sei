@@ -9,5 +9,5 @@ module.exports = (client) => {
     }, 20000)
     */
 
-    client.user.setActivity(`skrrt |server`, { type: 'STREAMING' });
+    client.user.setActivity(`skrrt |server`, { type: 'WATCHING' });
 }
