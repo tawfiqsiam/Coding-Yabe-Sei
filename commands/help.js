@@ -27,20 +27,20 @@ exports.run = (client, message, args) => {
                     }
                 });
             } catch (err) {
-                message.channel.send("An error has occured while processing your request. if this persists send a bug report using `yabe bug`");
+                message.channel.send("An error has occured while processing your request. if this persists send a bug report using ` hope`");
             }
         });
     } else {
         const embed = new Discord.RichEmbed()
             .setColor(client.config.embedColor)
-            .addField("**Changelog**", "You can check the latest changes with `yabe changelog`")
-            .addField("**Commands**", "List of all available commands\nFor additional help with a command, type `yabe help <command name>`\nThank you for using the Yabe beta bot! We hope you will stick with us!")
+            .addField("**Changelog**", "You can check the latest changes with `skrrt changelog`")
+            .addField("**Commands**", "List of all available commands\nFor additional help with a command, type `skrrt help <command name>`\nThank you for using My bot! i  hope you will Love it!")
             .addField("**Moderation** *`each require certain perms`*", "`say` `kick` `ban` `rem`")
             .addField("**Fun**", "`meme` `poke` `slap`")
             .addField("**Games**", "`games are coming very soon!`")
-            .addField("**Learning**", "`yabe learn` to learn more! [coming soon, I promise]")
+            .addField("**Learning**", "`just dont try tp learn codes just buy bots from me Join our [Discord](https://discord.gg/62EbKEV)")
             .addField("**Random**", "`roles` `roll` `addrole` `ping` `help` `serverinfo` `info` `bug` `invite` `whois` `avatar` `changelog` `translate` `uptime` `osu`")
-            .setFooter("Created by Adam, Hesham and Marvin")
+            .setFooter("Created by Jacob")
             .setTimestamp()
     
         message.channel.send(embed)
@@ -50,5 +50,6 @@ exports.run = (client, message, args) => {
 exports.help = {
     name: "help",
     description: "The `help` command displays a help menu, which contains a list of commands and a way to find further help.",
-    usage: "`yabe help`"
+    usage: "`skrrt help`"
+}
 }
