@@ -1,8 +1,8 @@
 const Discord = require("discord.js");
 const Enmap = require("enmap");
 const fs = require("fs");
-const YouTube = require('simple-youtube-api');
-const ytdl = require('ytdl-core');
+const moment = require('moment'); 
+const client = new Discord.Client();
 const config = require("./config.json");
 client.config = config;
 
@@ -27,6 +27,7 @@ fs.readdir("./commands/", (err, files) => {
     client.commands.set(commandName, props);
   });
 });
+
 const devs = ["521479557375852547"]
 
 const adminprefix = "+";
