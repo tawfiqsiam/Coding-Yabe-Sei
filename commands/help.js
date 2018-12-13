@@ -38,7 +38,7 @@ exports.run = (client, message, args) => {
             .addField("**Moderation** *`each require certain perms`*", "`say` `kick` `ban` `rem`")
             .addField("**Fun**", "`meme` `poke` `slap`")
             .addField("**Games**", "`games are coming very soon!`")
-            .addField("**Learning**", "`just dont try tp learn codes just buy bots from me")
+            .addField("**Learning**", "`just dont try tp learn codes just buy bots from me Join our [Discord](https://discord.gg/62EbKEV)")
             .addField("**Random**", "`roles` `roll` `addrole` `ping` `help` `serverinfo` `info` `bug` `invite` `whois` `avatar` `changelog` `translate` `uptime` `osu`")
             .setFooter("Created by Jacob")
             .setTimestamp()
