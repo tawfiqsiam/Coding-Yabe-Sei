@@ -27,7 +27,7 @@ exports.run = (client, message, args) => {
                     }
                 });
             } catch (err) {
-                message.channel.send("An error has occured while processing your request. if this persists send a bug report using ` hope`");
+                message.channel.send("An error has occured while processing your request. if this persists send a bug report using `yabe bug`");
             }
         });
     } else {
@@ -40,7 +40,7 @@ exports.run = (client, message, args) => {
             .addField("**Games**", "`games are coming very soon!`")
             .addField("**Learning**", "`just dont try tp learn codes just buy bots from me Join our [Discord](https://discord.gg/62EbKEV)")
             .addField("**Random**", "`roles` `roll` `addrole` `ping` `help` `serverinfo` `info` `bug` `invite` `whois` `avatar` `changelog` `translate` `uptime` `osu`")
-            .setFooter("Created by Jacob")
+            .setFooter("Created by Adam, Hesham and Marvin")
             .setTimestamp()
     
         message.channel.send(embed)
@@ -51,5 +51,4 @@ exports.help = {
     name: "help",
     description: "The `help` command displays a help menu, which contains a list of commands and a way to find further help.",
     usage: "`skrrt help`"
-}
 }
