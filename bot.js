@@ -1,7 +1,9 @@
 const Discord = require("discord.js");
 const Enmap = require("enmap");
 const fs = require("fs");
-
+const YouTube = require('simple-youtube-api');
+const ytdl = require('ytdl-core');
+const client = new Client({ disableEveryone: true });
 const client = new Discord.Client();
 const config = require("./config.json");
 client.config = config;
