@@ -34,7 +34,7 @@ exports.run = (client, message, args) => {
         const embed = new Discord.RichEmbed()
             .setColor(client.config.embedColor)
             .addField("**Changelog**", "You can check the latest changes with `skrrt changelog`")
-            .addField("**Commands**", "List of all available commands\nFor additional help with a command, type `skrrt help <command name>`\nThank you for using the Yabe beta bot! We hope you will stick with us!")
+            .addField("**Commands**", "List of all available commands\nFor additional help with a command, type `skrrt help <command name>`\nThank you for using My bot! i  hope you will Love it!")
             .addField("**Moderation** *`each require certain perms`*", "`say` `kick` `ban` `rem`")
             .addField("**Fun**", "`meme` `poke` `slap`")
             .addField("**Games**", "`games are coming very soon!`")
