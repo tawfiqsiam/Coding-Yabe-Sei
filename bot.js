@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const Enmap = require("enmap");
+const randomPuppy = require('random-puppy');
 const fs = require("fs");
 
 const client = new Discord.Client();
