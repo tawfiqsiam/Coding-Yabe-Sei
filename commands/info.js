@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 exports.run = (client, message, args) => {
     const version = client.config.botVersion;
     let embed = new Discord.RichEmbed()
-    .setTitle("**Who is Coding Yabe Sei?**")
+    .setTitle("**Who is Coding the bot?**")
     .setDescription("Codied as a gift to my Friend Jala Owner of Skrrt Server ")
     .addField("Created by:", "- ,`Jacob | ♂ , ♡#9900\n\nJoin our [Discord](https://discord.gg/62EbKEV) To ask if you can get your own botn\n")
     .setTimestamp()
