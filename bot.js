@@ -3,7 +3,6 @@ const Enmap = require("enmap");
 const fs = require("fs");
 const YouTube = require('simple-youtube-api');
 const ytdl = require('ytdl-core');
-const client = new Client({ disableEveryone: true });
 const config = require("./config.json");
 client.config = config;
 
