@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 
 module.exports = (client, guild) => {
-    client.user.setActivity(`With My Dick, { type: 'PLAYING' })
+    client.user.setActivity(`With My Dick`, { type: 'PLAYING' })
 
     let logChannel = client.config.logChannel
 
