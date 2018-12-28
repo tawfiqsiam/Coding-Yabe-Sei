@@ -128,7 +128,7 @@ exports.run = (client, message, [args, ...words]) => {
         .setColor(client.config.embedColor)
         .setTitle('List of languages yabe can translate:')
         .setDescription(listOfDLangs)
-        .addField('How to use: ', '`yabe translate lang1-lang2 stuff to translate`')
+        .addField('How to use: ', '`!translate lang1-lang2 stuff to translate`')
         .setTimestamp()
 
         message.channel.send(embed1)
@@ -140,11 +140,11 @@ exports.run = (client, message, [args, ...words]) => {
         let targetLang = args[3] + args[4];
 
         if (!langs.hasOwnProperty(sourceLang))
-            return message.channel.send(`Source language \`${sourceLang}\` doesn't exist.\n(if you believe this is wrong make a bug report using \`yabe bug\`)`);
+            return message.channel.send(`Source language \`${sourceLang}\` doesn't exist.\n(if you believe this is wrong make a bug report it)`);
         if (args[2] !== "-")
-            return message.channel.send('Please correctly format the command, like so\n\n`yabe translate en-es "word or sentence to translate"`');
+            return message.channel.send('Please correctly format the command, like so\n\n`!translate en-es "word or sentence to translate"`');
         if (!langs.hasOwnProperty(targetLang))
-            return message.channel.send(`Target Language \`${targetLang}\` doesn't exist.\n(if you believe this is wrong make a bug report using \`yabe bug\`)`);
+            return message.channel.send(`Target Language \`${targetLang}\` doesn't exist.\n(if you believe this is wrong make a bug report it )`);
         if (words == "")
             return message.channel.send("Please provide a word or sentence to translate.");
 
@@ -165,7 +165,7 @@ exports.run = (client, message, [args, ...words]) => {
             }
             catch(err) {
                 console.log(err);
-                message.channel.send("Something went wrong while translating, please check you formatted it correctly and try again.\nor if you believe this is a bug please report it with `yabe bug`");
+                message.channel.send("Something went wrong while translating, please check you formatted it correctly and try again.");
             }
         })
     }
@@ -174,6 +174,6 @@ exports.run = (client, message, [args, ...words]) => {
 exports.help = {
     name: "translate",
     description: "The `translate` command translates any text from any given language to another",
-    usage: "`yabe translate <source language>-<target language> <word or sentence to translate>`\nNote: the languages need to be in ISO 639-1 code format.\n\nFor a list of langs, use `yabe translate list`",
+    usage: "`!translate <source language>-<target language> <word or sentence to translate>`\nNote: the languages need to be in ISO 639-1 code format.\n\nFor a list of langs, use `!translate list`",
 }
 
