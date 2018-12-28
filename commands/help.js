@@ -50,5 +50,5 @@ exports.run = (client, message, args) => {
 exports.help = {
     name: "help",
     description: "The `help` command displays a help menu, which contains a list of commands and a way to find further help.",
-    usage: "`skrrt help`"
+    usage: "`!help`"
 }
