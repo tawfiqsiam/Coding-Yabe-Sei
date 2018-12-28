@@ -11,5 +11,5 @@ exports.run = (client, message, args) => {
 exports.help = {
     name: "ping",
     description: "The `ping` command returns the client's ping to the Discord API and the users ping to the client's host server.",
-    usage: "`yabe ping`",
+    usage: "`!ping`",
 }
