@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 
 module.exports = (client, guild) => {
-    client.user.setActivity(`yabe help | ${client.guilds.size} servers`, { type: 'PLAYING' })
+    client.user.setActivity(`!help | to have fun`, { type: 'PLAYING' })
 
     let logChannel = client.config.logChannel
 
