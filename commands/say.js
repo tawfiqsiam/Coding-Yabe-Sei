@@ -11,5 +11,5 @@ exports.run = (client, message, args) => {
 exports.help = {
     name: "say",
     description: "The `say` command requires `Manage Server` permission. It allows you to make the bot say what you want.",
-    usage: "`yabe say <what you want the bot to say>`",
+    usage: "`!say <what you want the bot to say>`",
 }
