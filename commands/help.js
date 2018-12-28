@@ -34,14 +34,9 @@ exports.run = (client, message, args) => {
     } else {
         const embed = new Discord.RichEmbed()
             .setColor(client.config.embedColor)
-            .addField("**Changelog**", "You can check the latest changes with `yabe changelog`")
-            .addField("**Commands**", "List of all available commands\nFor additional help with a command, type `yabe help <command name>`\nThank you for using the Yabe beta bot! We hope you will stick with us!")
-            .addField("**Moderation** *`each require certain perms`*", "`say` `kick` `ban` `rem` `send`")
-            .addField("**Fun**", "`meme` `poke` `slap` `rate`")
+            .addField("**Fun**", "`meme` `poke` `slap` `rate` `translate`")
             .addField("**Games**", "`8ball` `roll` `flip`")
-            .addField("**Learning**", "`yabe learn` to learn more! [coming soon, I promise]")
-            .addField("**Random**", "`roles` `addrole` `ping` `help` `serverinfo` `info` `bug` `invite` `whois` `avatar` `changelog` `translate` `uptime` `osu` `channel`")
-            .setFooter("Created by Adam, Hesham and Marvin")
+            .setFooter("Created by 2018#9018")
             .setTimestamp()
     
         message.channel.send(embed)
@@ -51,5 +46,5 @@ exports.run = (client, message, args) => {
 exports.help = {
     name: "help",
     description: "The `help` command displays a help menu, which contains a list of commands and a way to find further help.",
-    usage: "`yabe help`"
+    usage: "`!help`"
 }
