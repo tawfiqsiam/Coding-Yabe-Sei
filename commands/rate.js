@@ -24,5 +24,5 @@ exports.run = (client, message, args) => {
 exports.help = {
     name: "rate",
     description: "Rates whatever you input as argument based on her mood",
-    usage: "`yabe rate <thing to rate>`"
+    usage: "`!rate <thing to rate>`"
 }
