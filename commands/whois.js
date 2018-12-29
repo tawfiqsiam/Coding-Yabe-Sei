@@ -47,5 +47,5 @@ exports.run = (client, message, args) => {
 exports.help = {
 	name: "whois",
 	description: "The `whois` command displays a list of all people with a requested role.",
-	usage: "`yabe whois <name of role>",
+	usage: "`!whois <name of role>",
 }
