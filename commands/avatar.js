@@ -29,5 +29,5 @@ exports.run = (client, message, args) => {
 exports.help = {
 	name: "avatar",
 	description: "The `avatar` command sends the specified user's profile avatar on Discord. Leave empty to get your own avatar.",
-	usage: "`yabe avatar <desired user(without @)/leave blank for own>`",
+	usage: "`!avatar <desired user(without @)/leave blank for own>`",
 }
