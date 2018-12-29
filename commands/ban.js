@@ -59,5 +59,5 @@ exports.run = async (client, message, [mention, ...reason]) => {
 exports.help = {
     name: "ban",
     description: "The `ban` command requires `Ban Members` permission. It allows you to ban a specified user.",
-    usage: "`yabe ban <@user>`",
+    usage: "`!ban <@user>`",
 }
