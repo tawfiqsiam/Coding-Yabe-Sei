@@ -6,7 +6,7 @@ exports.run = (client, message, args) => {
 
     let chanSendFind = message.mentions.channels.first() ? message.mentions.channels.first().id : false
 
-    if(chanSendFind === false) return message.reply('you need to specify a channel to send this message in. `yabe send #<channel_name> <content>`')
+    if(chanSendFind === false) return message.reply('you need to specify a channel to send this message in. `!send #<channel_name> <content>`')
     if(!contSend) return message.reply('I can\'t send an empty message.')
 
     client.channels.get(chanSendFind).send(contSend)
@@ -17,5 +17,5 @@ exports.run = (client, message, args) => {
 exports.help = {
     name: "send",
     description: "The `send` command  requires `Manage Server` permission. Use it to send a command to a specific channel, as specified.",
-    usage: "`yabe send #<channel> <content of the message>`"
+    usage: "`!send #<channel> <content of the message>`"
 }
