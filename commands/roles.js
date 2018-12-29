@@ -20,5 +20,5 @@ exports.run = (client, message, args) => {
 exports.help = {
     name: "roles",
     description: "The `roles` command displays all roles for the server.",
-    usage: "`yabe roles`"
+    usage: "`!roles`"
 }
