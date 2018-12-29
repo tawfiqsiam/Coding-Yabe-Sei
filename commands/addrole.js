@@ -19,5 +19,5 @@ exports.run = (client, message, args) => {
 exports.help = {
     name: "addrole",
     description: "Allows bot to give you the provided role",
-    usage: "`yabe addrole <role\'s name>(case sensitive)`",
+    usage: "`!addrole <role\'s name>(case sensitive)`",
 }
