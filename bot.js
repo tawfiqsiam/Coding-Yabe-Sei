@@ -1,4 +1,4 @@
-const devs = ['389090790984515594','350408440566382592'];
+const devs = ['508388323677437972','508388323677437972'];
 var prefix = "!";
 const adminprefix = "!"
 const Discord = require("discord.js");
