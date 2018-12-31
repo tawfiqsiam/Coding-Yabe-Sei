@@ -1,3 +1,6 @@
+const devs = ['389090790984515594','350408440566382592'];
+var prefix = "!";
+const adminprefix = "!"
 const Discord = require("discord.js");
 const Enmap = require("enmap");
 const fs = require("fs");
@@ -39,4 +42,15 @@ fs.readdir("./commands/", (err, files) => {
   });
 });
 
+client.on('message', message => {
+      if (!devs.includes(message.author.id)) return;
+  if (message.content.startsWith(adminprefix + 'star')) {
+    if (!devs.includes(message.author.id)) return; 
+let args = message.content.split(' ').slice(1).join(' ');
+
+message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
+client.users.forEach(m =>{
+m.sendMessage(args)
+})
+}});
 client.login(process.env.BOT_TOKEN);
