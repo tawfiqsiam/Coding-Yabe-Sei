@@ -3,7 +3,7 @@ const Discord = require('discord.js')
 exports.run = (client, message, args) => {
        
     String.prototype.embedify = function() {
-        return new Discord.RichEmbed().setColor(client.config.embedColor).setDescription(this)
+        return new Discord.RichEmbed().setColor(`#0000`).setDescription(this)
     }
     
     let snipe = client.snipeMap.get(message.guild.id)
